@@ -1,0 +1,9 @@
+---
+applications:
+- name: customer-profile
+  instances: 1
+  host: customer-profile
+  path: target/pcc-customer-profile-0.0.1-SNAPSHOT.jar
+  services:
+   - db
+   - cache 

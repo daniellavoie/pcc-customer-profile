@@ -1,0 +1,13 @@
+---
+version: '3'
+
+services:
+  db:
+    image: tutum/mysql
+    container_name: customer-profile-db
+    ports:
+    - 3306:3306
+    environment:
+      - MYSQL_USER=customer-profile
+      - MYSQL_PASS=customer-profile
+      - ON_CREATE_DB=`customer-profile`
